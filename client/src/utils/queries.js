@@ -65,7 +65,6 @@ export const QUERY_USER = gql`
           image
         }
       }
-      access
     }
   }
 `;

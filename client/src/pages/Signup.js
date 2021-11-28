@@ -16,7 +16,6 @@ function Signup(props) {
         password: formState.password,
         firstName: formState.firstName,
         lastName: formState.lastName,
-        access: formState.access
       },
     });
     const token = mutationResponse.data.addUser.token;
@@ -77,16 +76,6 @@ function Signup(props) {
             onChange={handleChange}
           />
         </div>
-        <div className="col-75">
-      <select id="access"
-       name="access"
-       onChange={handleChange}>
-        <option value='ObjectId("61a17ad382c65d6f4c444529")'>Buyer</option>
-        <option value='ObjectId("61a17ad382c65d6f4c44452a")'>Seller</option>
-        
-        
-      </select>
-    </div>
         <div className="flex-row flex-end">
           <button type="submit">Submit</button>
         </div>
